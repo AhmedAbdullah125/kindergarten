@@ -679,10 +679,16 @@ a {
 .testimonials .slider1 {
   direction: rtl;
   text-align: left;
+  grid-template-columns: 4fr 1fr;
+}
+.testimonials .slide1 {
+  grid-template-columns: 4fr 1fr;
+}
+.testimonials .slide2 {
+  grid-template-columns: 1fr 4fr;
 }
 .testimonials .slide {
   display: grid;
-  grid-template-columns: 4fr 1fr;
   background-color: var(--white-color);
   border-radius: 25px;
   padding: 70px;
@@ -710,4 +716,22 @@ a {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .testimonials {
+    padding: 0 20px;
+  }
+  .testimonials .slide {
+    padding: 30px;
+    gap: 20px;
+  }
+  .testimonials .main-title h2 {
+    font-size: 45px;
+  }
+}
+@media (max-width: 500px) {
+  .testimonials .main-title h2 {
+    font-size: 35px;
+  }
 }/*# sourceMappingURL=main.css.map */
