@@ -1,0 +1,19 @@
+// // Abstracts
+@import "../style/sass/base/fonts";
+@import "../style/sass/abstracts/variables";
+@import "../style/sass/abstracts/mixins";
+
+
+// // Base
+@import "../style/sass/base/base";
+
+// //Components
+
+// //Layout
+@import "../style/sass/components/home";
+@import "../style/sass/components/navBar";
+@import "../style/sass/components/_main-styles";
+@import "../style/sass/components/_mission";
+@import "../style/sass/components/_services";
+@import "../style/sass/components/_courses";
+@import "../style/sass/components/testimonials";
