@@ -50,7 +50,7 @@ export default function Testimonials() {
                     },
                     1200: {
                         // width: 120,
-                        slidesPerView: 1.7,
+                        slidesPerView: 2.3,
                     },
                 }}
                 modules={[Autoplay]}
@@ -97,11 +97,11 @@ export default function Testimonials() {
                         },
                         1200: {
                             // width: 120,
-                            slidesPerView: 1.7,
+                            slidesPerView: 2.4,
                         },
                     }}
                     modules={[Autoplay]}
-                    autoplay={{ delay: 3500, pauseOnMouseEnter: true }}
+                    autoplay={{ delay: 3700, pauseOnMouseEnter: true }}
 
                     spaceBetween={50}
                     slidesPerView={2.3}

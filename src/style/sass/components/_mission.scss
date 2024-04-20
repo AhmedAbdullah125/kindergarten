@@ -4,10 +4,11 @@
     gap: 2%;
     align-items: center;
     justify-content: center;
-    padding: 2%;
     min-height: 100vh;
     background-color: #F5F5F5;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
+    padding-left: 3%;
+    padding-right: 3%;
 
     .welcome {
         display: flex;
@@ -74,7 +75,8 @@
 @media (max-width: 991px) {
     .mission {
         display: grid;
-        padding: 5%;
+        padding-right: 5%;
+        padding-left: 5%;
         grid-template-columns: 1fr;
 
 
