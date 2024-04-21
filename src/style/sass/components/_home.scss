@@ -4,7 +4,7 @@
     // background-image: url("../../../assets/1.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
 
     .overlay {
@@ -35,6 +35,14 @@
         }
     }
 }
+@media (max-width: 1200px) {
+    .header{
+        .header-content{
+            width: 90%;
+        }
+    } 
+}
+
 
 @media (max-width: 767px) {
     .header {
