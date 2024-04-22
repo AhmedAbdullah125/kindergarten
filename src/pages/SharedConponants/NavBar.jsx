@@ -5,9 +5,6 @@ import logo from '../../assets/ABC 16.png';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
 
-
-
-
 export default function NavBar() {
 
     
@@ -18,10 +15,10 @@ export default function NavBar() {
                     <NavLink><LazyLoadImage src={logo}></LazyLoadImage></NavLink>
                 </div>
                 <div className="links">
-                    <Link to="services"  spy={true}  smooth={true}  offset={0}  duration={500}    >Star Acadmy</Link>
-                    <NavLink>About</NavLink>
-                    <NavLink>Coursrs</NavLink>
-                    <NavLink to='#services'>Services</NavLink>
+                    <Link to="about"  spy={true} smooth={true} offset={0} duration={100}>About</Link>
+                    <Link to="courses"  spy={true} smooth={true} offset={0} duration={100}>Coursrs</Link>
+                    <Link to='services'  spy={true} smooth={true} offset={0} duration={100}>Services</Link>
+                    <Link to='testimonials'  spy={true} smooth={true} offset={0} duration={100}>Testimonials</Link>
                 </div>
                 <div className="explore">
                     <button className='explore'>Explore Coursrs</button>
@@ -33,10 +30,10 @@ export default function NavBar() {
                         <i class="fa-solid fa-bars"></i>
                     </Dropdown.Toggle>
                     <Dropdown.Menu>
-                        <Dropdown.Item href="#/action-1"> Home</Dropdown.Item>
-                        <Dropdown.Item href="#/action-2"> About</Dropdown.Item>
-                        <Dropdown.Item href="#/action-3"> Coursrs</Dropdown.Item>
-                        <Dropdown.Item href="#services"> Services</Dropdown.Item>
+                        <Dropdown.Item href="#/action-1"> <Link to="about"  spy={true} smooth={true} offset={0} duration={100}>About</Link>   </Dropdown.Item>
+                        <Dropdown.Item href="#/action-2"> <Link to="courses"  spy={true} smooth={true} offset={0} duration={100}>Coursrs</Link>  </Dropdown.Item>
+                        <Dropdown.Item href="#/action-3"> <Link to='services'  spy={true} smooth={true} offset={0} duration={100}>Services</Link></Dropdown.Item>
+                        <Dropdown.Item href="#services"> <Link to='testimonials'  spy={true} smooth={true} offset={0} duration={100}>Testimonials</Link></Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
             </div>

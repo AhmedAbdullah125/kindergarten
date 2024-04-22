@@ -1,0 +1,37 @@
+.articles {
+    background: rgb(245, 245, 245);
+    background: linear-gradient(180deg, rgba(245, 245, 245, 1) 0%, rgba(255, 255, 255, 1) 100%, rgba(255, 255, 255, 1) 100%);
+    padding: 70px;
+    .all-articles{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 55px;
+        .article{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            background-color: $white;
+            border-radius: 25px;
+            box-shadow: 2px 2px 40px #eee;
+            .text{
+                padding: 30px;
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                flex-direction: column;
+            }
+            .img-cont{
+                width: 100%;
+                aspect-ratio: 395/244;
+                overflow: hidden;
+                border-radius: 25px;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}

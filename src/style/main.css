@@ -315,6 +315,29 @@ ol.breadcrumb li:not(.active):after {
     display: none;
   }
 }
+.main-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.my-h4 {
+  padding: 0;
+  margin: 0;
+  color: var(--sec-color);
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.my-p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #363636;
+  text-align: center;
+}
+
 .header {
   background-repeat: no-repeat;
   background-size: cover;
@@ -646,7 +669,7 @@ a {
   padding: 0;
   margin: 0;
   color: var(--sec-color);
-  font-size: 24;
+  font-size: 24px;
   font-weight: 500;
 }
 
@@ -675,15 +698,6 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-}
-.testimonials .main-title {
-  text-align: center;
-}
-.testimonials .main-title h2 {
-  font-weight: 500;
-  font-size: 64px;
-  color: var(--sec-color);
-  margin-bottom: 70px;
 }
 .testimonials .slider1 {
   direction: rtl;
@@ -728,6 +742,16 @@ a {
      object-fit: cover;
 }
 
+.main-title {
+  text-align: center;
+}
+.main-title h2 {
+  font-weight: 500;
+  font-size: 64px;
+  color: var(--sec-color);
+  margin-bottom: 70px;
+}
+
 @media (max-width: 767px) {
   .testimonials {
     padding: 0 20px;
@@ -744,4 +768,42 @@ a {
   .testimonials .main-title h2 {
     font-size: 35px;
   }
+}
+.articles {
+  background: rgb(245, 245, 245);
+  background: linear-gradient(180deg, rgb(245, 245, 245) 0%, rgb(255, 255, 255) 100%, rgb(255, 255, 255) 100%);
+  padding: 70px;
+}
+.articles .all-articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 55px;
+}
+.articles .all-articles .article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  background-color: var(--white-color);
+  border-radius: 25px;
+  box-shadow: 2px 2px 40px #eee;
+}
+.articles .all-articles .article .text {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-direction: column;
+}
+.articles .all-articles .article .img-cont {
+  width: 100%;
+  aspect-ratio: 395/244;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.articles .all-articles .article .img-cont img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=main.css.map */

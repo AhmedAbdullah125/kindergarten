@@ -10,7 +10,7 @@ export default function Mission() {
     },[])
     
     return (
-        <div className='mission'>
+        <div className='mission' id='about'>
             <div className="welcome">
                 <h2>Welcome To Smart Academy</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum modi ab laudantium eius, nam sapiente odit cum accusantium molestias, voluptatibus vel minus corporis corrupti commodi incidunt, dolorum tempora cupiditate officiis?</p>

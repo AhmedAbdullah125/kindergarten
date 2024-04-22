@@ -7,16 +7,7 @@
     flex-direction: column;
     justify-content: space-around;
 
-    .main-title {
-        text-align: center;
 
-        h2 {
-            font-weight: 500;
-            font-size: 64px;
-            color: $sec;
-            margin-bottom: 70px;
-        }
-    }
 
     .slider1 {
         direction: rtl;
@@ -25,10 +16,12 @@
         margin-bottom: 50px;
 
     }
-    .slide1{
+
+    .slide1 {
         grid-template-columns: 4fr 1fr;
 
     }
+
     .slide2 {
         grid-template-columns: 1fr 4fr;
 
@@ -70,13 +63,26 @@
     }
 }
 
+.main-title {
+    text-align: center;
+
+    h2 {
+        font-weight: 500;
+        font-size: 64px;
+        color: $sec;
+        margin-bottom: 70px;
+    }
+}
+
 @media (max-width: 767px) {
     .testimonials {
         padding: 0 20px;
-        .slide{
+
+        .slide {
             padding: 30px;
             gap: 20px;
         }
+
         .main-title {
             h2 {
                 font-size: 45px;
@@ -84,6 +90,7 @@
         }
     }
 }
+
 @media (max-width: 500px) {
     .testimonials {
         .main-title {

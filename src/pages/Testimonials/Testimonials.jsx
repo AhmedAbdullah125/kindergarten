@@ -29,7 +29,7 @@ export default function Testimonials() {
         { id: 10, img: student10, name: "Hamza Ahmed", openion: "Dieser Ort ist der Ort, den ich am meisten auf der Welt liebe. Ich liebe die Lehrer und ich liebe meine Kollegen" },
     ]
     return (
-        <div className='testimonials'>
+        <div className='testimonials main-page'>
             <div className="main-title" >
                 <h2>Unsere Erfahrungsberichte</h2>
             </div>
