@@ -13,19 +13,19 @@ export default function Services() {
 
     let servicesArr = [
         { id: 1, img: <img src={icon1} alt="icon" />, h31: "Professionelle", h32: "Lehrer", p: 'Wir haben professionelle Lehrer, die sich auf das Unterrichten von Kindern spezialisiert haben' },
-        { id: 2, img: <i class="fa-regular fa-heart"></i>, h31: "Toleranter und", h32: "Rücksichtsvoller Umgang", p: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-        { id: 3, img: <i class="fa-solid fa-clover"></i>, h31: "Gegenseitige", h32: "Achtung", p: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
+        { id: 2, img: <i className="fa-regular fa-heart"></i>, h31: "Toleranter und", h32: "Rücksichtsvoller Umgang", p: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
+        { id: 3, img: <i className="fa-solid fa-clover"></i>, h31: "Gegenseitige", h32: "Achtung", p: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
         { id: 4, img: <img src={icon2} alt="icon" />, h31: "Online", h32: "Kurse", p: 'Wir arbeiten daran, Online-Kurse in Kindergärten zu Kindergarten' },
         { id: 5, img: <img src={icon3} alt="icon" />, h31: "Zertifikatskurs", h32: "", p: 'Die von uns angebotenen Kurse sind nach wissenschaftlichen Studien akkreditiert' },
-        { id: 6, img: <i class="fa-solid fa-building-wheat"></i>, h31: "Grenzen und", h32: "Regeln akzeptieren", p: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-        { id: 7, img: <i class="fa-solid fa-bacon"></i>, h31: "Konflikte", h32: "verbal lösen", p: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-        { id: 8, img: <i class="fa-solid fa-layer-group"></i>, h31: "Entwicklung jedes", h32: "einzelne Kindes", p: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-        { id: 9, img: <i class="fa-solid fa-person-breastfeeding"></i>, h31: "Elternarbeit", h32: "", p: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
+        { id: 6, img: <i className="fa-solid fa-building-wheat"></i>, h31: "Grenzen und", h32: "Regeln akzeptieren", p: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
+        { id: 7, img: <i className="fa-solid fa-bacon"></i>, h31: "Konflikte", h32: "verbal lösen", p: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
+        { id: 8, img: <i className="fa-solid fa-layer-group"></i>, h31: "Entwicklung jedes", h32: "einzelne Kindes", p: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
+        { id: 9, img: <i className="fa-solid fa-person-breastfeeding"></i>, h31: "Elternarbeit", h32: "", p: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
         { id: 10, img: <img src={icon4} alt="icon" />, h31: "Besserer", h32: "Wert", p: 'Wir bieten zielgerichtete Inhalte, die Kindern bei der geistigen Reife und Entwicklung helfen' },
-        { id: 11, img: <i class="fa-regular fa-handshake"></i>, h31: "Selbstwertgefühl ", h32: "", p: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-        { id: 12, img: <i class="fa-solid fa-award"></i>, h31: "Selbstvertrauen ", h32: "", p: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-        { id: 13, img: <i class="fa-solid fa-user-shield"></i>, h31: "Selbstständigkeit ", h32: "", p: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-        { id: 14, img: <i class="fa-solid fa-fingerprint"></i>, h31: "Spezielle ", h32: "", p: 'Förderangebote für Vorschulkinder' },
+        { id: 11, img: <i className="fa-regular fa-handshake"></i>, h31: "Selbstwertgefühl ", h32: "", p: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
+        { id: 12, img: <i className="fa-solid fa-award"></i>, h31: "Selbstvertrauen ", h32: "", p: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
+        { id: 13, img: <i className="fa-solid fa-user-shield"></i>, h31: "Selbstständigkeit ", h32: "", p: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
+        { id: 14, img: <i className="fa-solid fa-fingerprint"></i>, h31: "Spezielle ", h32: "", p: 'Förderangebote für Vorschulkinder' },
     ]
     return (
         <div className="serv-cont" id='services' >

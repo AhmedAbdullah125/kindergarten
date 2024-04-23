@@ -35,3 +35,54 @@
         }
     }
 }
+
+@media (max-width: 1200px) {
+    .articles {
+        padding: 30px;
+        .all-articles{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 25px;
+        }
+    }
+}
+@media (max-width: 990px) {
+    .articles {
+        padding: 70px;
+        .all-articles{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 55px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .articles {
+        padding: 20px;
+        .all-articles{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+    }
+}
+@media (max-width: 655px) {
+    .articles {
+        padding: 40px;
+        .all-articles{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 45px;
+        }
+    }
+}
+@media (max-width: 450px) {
+    .articles {
+        padding: 15px;
+        .all-articles{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 45px;
+        }
+    }
+}

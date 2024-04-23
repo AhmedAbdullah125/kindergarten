@@ -387,7 +387,7 @@ ol.breadcrumb li:not(.active):after {
   }
 }
 .navbar {
-  padding: 20px 50px;
+  padding: 5px 50px;
   margin: 0;
   display: flex;
 }
@@ -438,6 +438,13 @@ ol.breadcrumb li:not(.active):after {
 }
 .explore button:hover {
   background-color: var(--main-hover);
+}
+
+.navbarDark .navbar-cont .links a {
+  color: var(--main-color);
+}
+.navbarDark .openicon i {
+  color: var(--black-color);
 }
 
 @media (max-width: 767px) {
@@ -806,4 +813,55 @@ a {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+  .articles {
+    padding: 30px;
+  }
+  .articles .all-articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+  }
+}
+@media (max-width: 990px) {
+  .articles {
+    padding: 70px;
+  }
+  .articles .all-articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+  }
+}
+@media (max-width: 767px) {
+  .articles {
+    padding: 20px;
+  }
+  .articles .all-articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+}
+@media (max-width: 655px) {
+  .articles {
+    padding: 40px;
+  }
+  .articles .all-articles {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+}
+@media (max-width: 450px) {
+  .articles {
+    padding: 15px;
+  }
+  .articles .all-articles {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -1,5 +1,5 @@
 .navbar {
-    padding: 20px 50px;
+    padding: 5px 50px;
     margin: 0;
     display: flex;
 
@@ -14,7 +14,7 @@
             align-items: center;
             justify-content: center;
             gap: 30px;
-            
+
 
             a {
                 color: $white;
@@ -29,7 +29,8 @@
                 font-weight: 700;
                 font-size: 18px;
             }
-            img{
+
+            img {
                 max-width: 90px;
             }
         }
@@ -61,8 +62,24 @@
         color: $white;
         @include tr;
     }
-    button:hover{
+
+    button:hover {
         background-color: $hover;
+    }
+}
+
+.navbarDark {
+    .navbar-cont {
+        .links {
+            a{
+                color: $main;
+            }
+        }
+    }
+    .openicon{
+        i{
+            color: $black;
+        }
     }
 }
 
@@ -74,11 +91,14 @@
     .navbar {
         .openicon {
             display: block;
-            .dropdown{
-                button{
+
+            .dropdown {
+                button {
                     border: none;
                     outline: none;
-                }::after{
+                }
+
+                ::after {
                     content: "";
                     display: none;
                 }

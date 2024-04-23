@@ -4,15 +4,15 @@ import { NavLink } from 'react-router-dom'
 import logo from '../../assets/ABC 16.png';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
+import { useLocation } from 'react-router-dom';
 
 export default function NavBar() {
-
-    
+    let location = useLocation().pathname;
     return (
-        <div className='navbar'>
+        <div className={location!=="/"?"navbar navbarDark":"navbar"}>
             <div className="navbar-cont">
                 <div className="title">
-                    <NavLink><LazyLoadImage src={logo}></LazyLoadImage></NavLink>
+                    <NavLink to="/"><LazyLoadImage src={logo}></LazyLoadImage></NavLink>
                 </div>
                 <div className="links">
                     <Link to="about"  spy={true} smooth={true} offset={0} duration={100}>About</Link>
@@ -21,13 +21,13 @@ export default function NavBar() {
                     <Link to='testimonials'  spy={true} smooth={true} offset={0} duration={100}>Testimonials</Link>
                 </div>
                 <div className="explore">
-                    <button className='explore'>Explore Coursrs</button>
+                    <NavLink to='/courses'><button className='explore'>Explore Coursrs</button></NavLink>
                 </div>
             </div>
             <div className="openicon">
                 <Dropdown>
                     <Dropdown.Toggle variant="succfess" id="dropdown-basic">
-                        <i class="fa-solid fa-bars"></i>
+                        <i className="fa-solid fa-bars"></i>
                     </Dropdown.Toggle>
                     <Dropdown.Menu>
                         <Dropdown.Item href="#/action-1"> <Link to="about"  spy={true} smooth={true} offset={0} duration={100}>About</Link>   </Dropdown.Item>
