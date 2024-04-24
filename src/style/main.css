@@ -977,4 +977,13 @@ a {
   display: flex;
   flex-direction: column;
   gap: 55px;
+}
+
+@media (max-width: 991px) {
+  .footer {
+    min-height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 100px;
+  }
 }/*# sourceMappingURL=main.css.map */

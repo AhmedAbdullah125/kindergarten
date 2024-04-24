@@ -43,3 +43,12 @@
         gap: 55px;
     }
 }
+
+@media (max-width: 991px) {
+    .footer {
+        min-height: 50vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 100px;
+    }
+}
