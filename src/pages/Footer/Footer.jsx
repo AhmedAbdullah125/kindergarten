@@ -9,10 +9,10 @@ export default function Footer() {
                 <h2>A B C || أ ب ت Kindergarten</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis dolor vel lacus laoreet tristique. Nunc bibendum justo</p>
                 <div className="social">
-                    <i className="fa-brands fa-facebook-f"></i>
-                    <i className="fa-brands fa-x-twitter"></i>
-                    <i className="fa-brands fa-instagram"></i>
-                    <i className="fa-brands fa-whatsapp"></i>
+                    <a href="fb.com"><i className="fa-brands fa-facebook-f"></i></a>
+                    <a href="twitter.com"><i className="fa-brands fa-x-twitter"></i></a>
+                    <a href="instegram.com"><i className="fa-brands fa-instagram"></i></a>
+                    <a href="https://api.whatsapp.com/send/?phone=201013633154&text=Hello%20ABC"><i className="fa-brands fa-whatsapp"></i></a>
                 </div>
             </div>
             <div className="links-div">
@@ -24,6 +24,7 @@ export default function Footer() {
                 <Link to='testimonials' spy={true} smooth={true} offset={0} duration={100}>Testimonials</Link>
                 </div>
                 <div></div>
+
             </div>
         </div>
     )

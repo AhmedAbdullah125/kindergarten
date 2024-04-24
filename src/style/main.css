@@ -451,6 +451,14 @@ ol.breadcrumb li:not(.active):after {
   display: block;
   width: 100%;
 }
+.navbar .openicon .dropdown .dropdown-item:hover {
+  background-color: var(--main-color);
+  color: var(--sec-color);
+}
+.navbar .openicon .dropdown .dropdown-item:hover a {
+  color: var(--white-color);
+  font-weight: 500;
+}
 .navbar .openicon i {
   color: var(--white-color);
   font-size: 20px;
@@ -479,7 +487,7 @@ ol.breadcrumb li:not(.active):after {
   color: var(--black-color);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .navbar .openicon {
     display: block;
   }
@@ -980,7 +988,7 @@ a {
   align-items: center;
   justify-content: flex-start;
   background-color: var(--main-color);
-  padding: 100px;
+  padding: 70px;
   color: var(--white-color);
 }
 .footer .tint {
@@ -1000,6 +1008,9 @@ a {
   display: flex;
   width: 100%;
   gap: 30px;
+}
+.footer .tint .social a {
+  color: var(--white-color);
 }
 .footer .links {
   display: grid;

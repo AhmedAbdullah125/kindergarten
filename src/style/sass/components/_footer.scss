@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: flex-start;
     background-color: $main;
-    padding: 100px;
+    padding: 70px;
     color: $white;
 
     .tint {
@@ -28,6 +28,10 @@
             display: flex;
             width: 100%;
             gap: 30px;
+
+            a {
+                color: $white;
+            }
         }
     }
 
@@ -72,10 +76,12 @@
                 gap: 30px;
             }
         }
+
         .links-div {
             gap: 20px;
-            .links{
-                grid-template-columns: repeat(4,1fr);
+
+            .links {
+                grid-template-columns: repeat(4, 1fr);
             }
         }
     }
