@@ -5,7 +5,7 @@ export default function HeaderBody() {
     return (
         <div>
             <div className="header-content" >
-                <h1>Gerne übernehmen wir eine Patenschaft für Ihr Kind<br/>Mehr als nur Pflege</h1>
+                <h1>Gerne übernehmen wir eine Patenschaft für Ihr Kind</h1>
                 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis natus, qui consectetur nam accusantium id consequatur fuga dicta. Nobis asperiores hic, qui sint quasi ipsum libero similique sit optio accusantium?</p>
                 <div className="explore">

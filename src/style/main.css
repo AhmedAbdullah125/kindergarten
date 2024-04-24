@@ -360,7 +360,7 @@ ol.breadcrumb li:not(.active):after {
   height: calc(100vh - 90px);
 }
 .header .header-content h1 {
-  font-size: 90px;
+  font-size: 80px;
   font-weight: 700;
 }
 .header .header-content p {
@@ -374,16 +374,32 @@ ol.breadcrumb li:not(.active):after {
     width: 90%;
   }
 }
+@media (max-width: 1200px) {
+  .header .header-content {
+    width: auto;
+  }
+  .header .header-content h1 {
+    font-size: 60px;
+    font-weight: 700;
+  }
+  .header .header-content p {
+    width: auto;
+  }
+}
+@media (max-width: 991px) {
+  .header .header-content {
+    width: auto;
+  }
+  .header .header-content h1 {
+    font-size: 50px;
+  }
+}
 @media (max-width: 767px) {
   .header .header-content {
     width: auto;
   }
   .header .header-content h1 {
     font-size: 40px;
-    font-weight: 700;
-  }
-  .header .header-content p {
-    width: auto;
   }
 }
 .navbar {
