@@ -14,9 +14,9 @@ export default function Subscribe() {
             e.target.reset();
     }
     return (
-        <div className='subscribe contact' id='contact'  data-aos="fade-left" data-aos-duration="700"  data-aos-easing="ease-in-sine">
-            <h2 data-aos="fade-left"  data-aos-offset="500" data-aos-easing="ease-in-sine">Ignite Your Child's Potential Take the Leap with an Online Course</h2>
-            <form  className="subscribe-form" onSubmit={sendEmail} ref={form}>
+        <div className='subscribe contact' id='contact'  >
+            <h2 data-aos="fade-left" data-aos-duration="700"  data-aos-easing="ease-in-sine">Ignite Your Child's Potential Take the Leap with an Online Course</h2>
+            <form  className="subscribe-form" onSubmit={sendEmail} ref={form} data-aos="fade-left" data-aos-duration="700"  data-aos-easing="ease-in-sine">
                 <div className="input">
                     <input type="text" placeholder='Your email addres...' name='from_email' />
                 </div>
