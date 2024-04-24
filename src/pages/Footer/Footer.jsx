@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 
 export default function Footer() {
     return (
-        <div className='footer'>
+        <div className='footer' data-aos="fade-left" data-aos-duration="700"  data-aos-easing="ease-in-sine">
             <div className="tint">
                 <h2>A B C || أ ب ت Kindergarten</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis dolor vel lacus laoreet tristique. Nunc bibendum justo</p>
