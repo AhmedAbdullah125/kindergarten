@@ -567,6 +567,9 @@ a {
     padding-left: 5%;
     grid-template-columns: 1fr;
   }
+  .mission h2 {
+    font-size: 40px;
+  }
   .mission .img-center {
     max-height: unset;
     justify-content: center;
@@ -646,6 +649,9 @@ a {
 .services .services-sers .service-col:nth-child(odd) .icon {
   background-color: var(--sec-color);
 }
+.services .explore {
+  display: none;
+}
 .services .hidden {
   display: none;
 }
@@ -658,6 +664,9 @@ a {
   }
   .services .services-sers .dis-non {
     display: none;
+  }
+  .services .explore {
+    display: block;
   }
 }
 @media (max-width: 991px) {
@@ -680,6 +689,10 @@ a {
     font-size: 45px;
   }
 }
+.services .hidden {
+  display: none;
+}
+
 .courses {
   border-radius: 0;
   padding-bottom: 100px;
@@ -1017,8 +1030,9 @@ a {
     gap: 30px;
   }
   .footer .links-div {
-    display: flex;
-    flex-direction: column;
     gap: 20px;
+  }
+  .footer .links-div .links {
+    grid-template-columns: repeat(4, 1fr);
   }
 }/*# sourceMappingURL=main.css.map */

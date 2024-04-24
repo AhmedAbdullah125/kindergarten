@@ -73,9 +73,10 @@
             }
         }
         .links-div {
-            display: flex;
-            flex-direction: column;
             gap: 20px;
+            .links{
+                grid-template-columns: repeat(4,1fr);
+            }
         }
     }
 }

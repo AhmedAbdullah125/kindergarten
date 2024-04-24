@@ -79,8 +79,9 @@
         padding-right: 5%;
         padding-left: 5%;
         grid-template-columns: 1fr;
-
-
+        h2{
+            font-size: 40px;
+        }
         .img-center {
             max-height: unset;
             justify-content: center;

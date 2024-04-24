@@ -77,6 +77,9 @@
             background-color: $sec;
         }
     }
+    .explore {
+        display: none;
+    }
     .hidden{
         display: none;
     }
@@ -92,10 +95,11 @@
                 display: none;
             }
         }
+        .explore {
+            display: block;
+        }
     }
-
 }
-
 @media (max-width: 991px) {
     .services {
         .services-sers {
@@ -108,7 +112,7 @@
             display: none;
         }
     }
-}
+}   
 
 @media (max-width: 767px) {}
 
@@ -123,5 +127,10 @@
         h2 {
             font-size: 45px;
         }
+    }
+}
+.services{
+    .hidden{
+        display: none;
     }
 }
