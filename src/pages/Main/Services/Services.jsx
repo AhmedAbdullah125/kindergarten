@@ -38,7 +38,7 @@ export default function Services() {
                 </div>
                 <div className={location === "/" ? "services-sers sers-mini" : "services-sers"}>
                     {servicesArr.map((ele) =>
-                        <div className={location === "/" ? ele.id > 4 ? "service-col dis-non" : "service-col" : "service-col"} key={ele.id} data-aos="fade-up" data-aos-duration="1000">
+                        <div className={location === "/" ? ele.id > 4 ? "service-col hr-box dis-non" : "service-col hr-box" : "service-col hr-box"} key={ele.id} data-aos="fade-up" data-aos-duration="1000">
                             <div className="icon">
                                 {ele.img}
                             </div>

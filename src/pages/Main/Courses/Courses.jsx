@@ -15,7 +15,7 @@ export default function Courses() {
         { id: 2, img: singing, h: "Singen" },
         { id: 3, img: outside, h: "Unterhaltung im Freien" },
         { id: 4, img: baking, h: "Backen " },
-        { id: 5, img: crafting, h: "basteln " },
+        { id: 5, img: crafting, h: "Basteln " },
         { id: 6, img: reading, h: "Geschichten vorlesen " },
         { id: 7, img: garden, h: "Ausflüge" },
         { id: 8, img: sew, h: "Kunsthandwerk " },
@@ -28,7 +28,7 @@ export default function Courses() {
             </div>
             <div className="courses-cont">
                 {courses.map((ele) =>
-                <div className="course" data-aos="zoom-in-up" data-aos-duration="700" key={ele.id}>
+                <div className="course hr-box" data-aos="zoom-in-up" data-aos-duration="700" key={ele.id}>
                     <div className="img-cont">
                         <img src={ele.img} alt="course" />
                     </div>
