@@ -348,6 +348,7 @@ ol.breadcrumb li:not(.active):after {
   height: 100%;
   background: rgb(129, 129, 129);
   background: linear-gradient(270deg, rgba(0, 0, 0, 0.6) 34%, rgba(0, 0, 0, 0.7) 100%, rgb(0, 0, 0) 100%);
+  min-height: 100vh;
 }
 .header .header-content {
   padding: 50px;
@@ -407,6 +408,9 @@ ol.breadcrumb li:not(.active):after {
   padding: 5px 50px;
   margin: 0;
   display: flex;
+}
+.navbar .title {
+  padding: 10px;
 }
 .navbar .navbar-cont {
   width: 100%;

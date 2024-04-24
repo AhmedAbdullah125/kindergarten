@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Outlet } from 'react-router-dom';
-import icon from '../assets/ABC 16.png'
+import icon from '../assets/ABC 16.webp'
 import Favicon from 'react-favicon';
 
 

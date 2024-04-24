@@ -1,7 +1,7 @@
 import Dropdown from 'react-bootstrap/Dropdown';
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import logo from '../../assets/ABC 16.png';
+import logo from '../../assets/ABC 16.webp';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Link} from 'react-scroll';
 import { useLocation } from 'react-router-dom';
