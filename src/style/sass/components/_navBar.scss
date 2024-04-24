@@ -42,6 +42,9 @@
         .dropdown {
             a {
                 color: $black;
+                height: 100%;
+                display: block;
+                width: 100%;
             }
         }
 
@@ -69,15 +72,17 @@
 }
 
 .navbarDark {
+    box-shadow: 0px 5px 17px #ddd;
     .navbar-cont {
         .links {
-            a{
+            a {
                 color: $main;
             }
         }
     }
-    .openicon{
-        i{
+
+    .openicon {
+        i {
             color: $black;
         }
     }

@@ -3,6 +3,8 @@ import Header from '../Main/Header/Header'
 import Mission from '../Main/Mission/Mission'
 import Testimonials from '../Testimonials/Testimonials'
 import Articles from '../Main/Articles/Articles'
+import Subscribe from '../Subscribe/Subscribe'
+import Footer from '../Footer/Footer'
 // import Services from '../Main/Services/Services'
 const Services = lazy(() => import('../Main/Services/Services'))
 const Courses = lazy(() => import('../Main/Courses/Courses'))
@@ -16,6 +18,8 @@ export default function Home() {
       <Suspense><Courses></Courses> </Suspense>
       <Suspense><Testimonials></Testimonials> </Suspense>
       <Suspense><Articles></Articles> </Suspense>
+      <Suspense><Subscribe></Subscribe> </Suspense>
+      <Suspense><Footer></Footer> </Suspense>
 
     </div>
   )

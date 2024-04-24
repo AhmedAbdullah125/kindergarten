@@ -421,6 +421,9 @@ ol.breadcrumb li:not(.active):after {
 }
 .navbar .openicon .dropdown a {
   color: var(--black-color);
+  height: 100%;
+  display: block;
+  width: 100%;
 }
 .navbar .openicon i {
   color: var(--white-color);
@@ -440,6 +443,9 @@ ol.breadcrumb li:not(.active):after {
   background-color: var(--main-hover);
 }
 
+.navbarDark {
+  box-shadow: 0px 5px 17px #ddd;
+}
 .navbarDark .navbar-cont .links a {
   color: var(--main-color);
 }
@@ -469,6 +475,7 @@ ol.breadcrumb li:not(.active):after {
 }
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .mission {
@@ -864,4 +871,93 @@ a {
     grid-template-columns: 1fr;
     gap: 45px;
   }
+}
+.subscribe {
+  background-color: var(--sec-color);
+  color: var(--white-color);
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 100px;
+}
+.subscribe .subscribe-form {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 55px;
+}
+.subscribe .subscribe-form .input {
+  background-color: var(--white-color);
+  border-radius: 55px;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.subscribe .subscribe-form .input input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+@media (max-width: 767px) {
+  .subscribe {
+    padding: 50px;
+  }
+}
+@media (max-width: 550px) {
+  .subscribe {
+    padding: 50px;
+  }
+  .subscribe .subscribe-form {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .subscribe .subscribe-form .input {
+    min-height: 45px;
+  }
+  .subscribe .subscribe-form button {
+    width: 100%;
+  }
+}
+.footer {
+  min-height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--main-color);
+  padding: 100px;
+  color: var(--white-color);
+}
+.footer .tint {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+.footer .tint h2 {
+  font-weight: 700;
+  font-size: 40px;
+}
+.footer .tint p {
+  font-weight: 300;
+  font-size: 20px;
+}
+.footer .tint .social {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+}
+.footer .links {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+.footer .links-div {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
 }/*# sourceMappingURL=main.css.map */

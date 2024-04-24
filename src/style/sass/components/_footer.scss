@@ -1,0 +1,45 @@
+.footer {
+    min-height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: $main;
+    padding: 100px;
+    color: $white;
+
+    .tint {
+        display: flex;
+        flex-direction: column;
+        gap: 55px;
+
+        h2 {
+            font-weight: 700;
+            font-size: 40px;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 20px;
+        }
+
+        .social {
+            display: flex;
+            width: 100%;
+            gap: 30px;
+        }
+    }
+
+    .links {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .links-div {
+        display: flex;
+        flex-direction: column;
+        gap: 55px;
+    }
+}

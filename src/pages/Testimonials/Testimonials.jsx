@@ -1,6 +1,6 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, autoplay } from 'swiper/modules';
+import { Autoplay} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/autoplay';
 import student1 from '../../assets/Testimonials/1.png'
@@ -29,7 +29,7 @@ export default function Testimonials() {
         { id: 10, img: student10, name: "Hamza Ahmed", openion: "Dieser Ort ist der Ort, den ich am meisten auf der Welt liebe. Ich liebe die Lehrer und ich liebe meine Kollegen" },
     ]
     return (
-        <div className='testimonials main-page'>
+        <div className='testimonials main-page' id='testimonials'>
             <div className="main-title" >
                 <h2>Unsere Erfahrungsberichte</h2>
             </div>
