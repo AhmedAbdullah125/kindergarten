@@ -2,8 +2,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout from './pages/Layout';
 import { Suspense, lazy } from 'react';
 import NotFound from './pages/NotFound';
-import Courses from './pages/Main/Courses/Courses';
 import CoursesPage from './pages/CoursesPage/CoursesPage';
+import ServicesPage from './pages/ServicesPage/ServicesPage';
 const Home = lazy(() => import('./pages/Home/Home'))
 
 function App() {
@@ -12,6 +12,7 @@ function App() {
     { index: true, element: <Suspense><Home></Home></Suspense> },
     { path: '*', element: <NotFound></NotFound> },
     { path: '/courses', element: <CoursesPage></CoursesPage> },
+    { path: '/Services', element: <ServicesPage></ServicesPage> },
   ]
 }
 ])

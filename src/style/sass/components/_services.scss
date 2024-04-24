@@ -6,9 +6,9 @@
 
 .services {
     background: rgb(245, 245, 245);
-    background: linear-gradient(180deg, rgba(245, 245, 245, 1) 0%, rgba(255, 255, 255, 1) 100%, rgba(0, 0, 0, 0.989233193277311) 100%);
+    background: linear-gradient(180deg, rgba(245, 245, 245, 1) 0%, rgba(255, 255, 255, 1) 100%,rgba(255, 255, 255, 1) 100%);
     padding: 30px;
-    border-radius: 100px;
+    border-radius: 50px;
     min-height: calc(100vh - 20px);
     display: flex;
     gap: 80px;
@@ -71,10 +71,14 @@
                 color: #363636;
             }
         }
+        
 
         .service-col:nth-child(odd) .icon {
             background-color: $sec;
         }
+    }
+    .hidden{
+        display: none;
     }
 }
 
@@ -84,6 +88,9 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 35px;
+            .dis-non{
+                display: none;
+            }
         }
     }
 
@@ -95,6 +102,10 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 35px;
+            
+        }
+        .sers-mini:nth-child(1){
+            display: none;
         }
     }
 }

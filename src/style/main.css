@@ -583,9 +583,9 @@ a {
 
 .services {
   background: rgb(245, 245, 245);
-  background: linear-gradient(180deg, rgb(245, 245, 245) 0%, rgb(255, 255, 255) 100%, rgba(0, 0, 0, 0.9892331933) 100%);
+  background: linear-gradient(180deg, rgb(245, 245, 245) 0%, rgb(255, 255, 255) 100%, rgb(255, 255, 255) 100%);
   padding: 30px;
-  border-radius: 100px;
+  border-radius: 50px;
   min-height: calc(100vh - 20px);
   display: flex;
   gap: 80px;
@@ -646,6 +646,9 @@ a {
 .services .services-sers .service-col:nth-child(odd) .icon {
   background-color: var(--sec-color);
 }
+.services .hidden {
+  display: none;
+}
 
 @media (max-width: 1200px) {
   .services .services-sers {
@@ -653,12 +656,18 @@ a {
     grid-template-columns: repeat(3, 1fr);
     gap: 35px;
   }
+  .services .services-sers .dis-non {
+    display: none;
+  }
 }
 @media (max-width: 991px) {
   .services .services-sers {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 35px;
+  }
+  .services .sers-mini:nth-child(1) {
+    display: none;
   }
 }
 @media (max-width: 600px) {

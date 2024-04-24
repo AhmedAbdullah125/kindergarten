@@ -5,8 +5,11 @@ import icon3 from '../../../assets/Services/IconCerticate.png'
 import icon4 from '../../../assets/Services/IconScore.png'
 import Aos from 'aos'
 import "aos/dist/aos.css"
+import { NavLink, useLocation } from 'react-router-dom'
 
 export default function Services() {
+    let location = useLocation().pathname;
+
     useEffect(() => {
         Aos.init();
     }, [])
@@ -33,9 +36,9 @@ export default function Services() {
                 <div className="services-title" data-aos="fade-up" data-aos-duration="700">
                     <h2>Unsere pädagogische Arbeit </h2>
                 </div>
-                <div className="services-sers">
+                <div className={location === "/" ? "services-sers sers-mini" : "services-sers"}>
                     {servicesArr.map((ele) =>
-                        <div className="service-col" key={ele.id} data-aos="fade-up" data-aos-duration="1000">
+                        <div className={location === "/" ? ele.id > 4 ? "service-col dis-non" : "service-col" : "service-col"} key={ele.id} data-aos="fade-up" data-aos-duration="1000">
                             <div className="icon">
                                 {ele.img}
                             </div>
@@ -44,9 +47,8 @@ export default function Services() {
                         </div>
                     )}
                 </div>
-                <div className="explore" data-aos="fade-up" data-aos-duration="1000">
-                    <button className='explore' >Read More</button>
-
+                <div className={location==="/"?"explore":"explore hidden"} data-aos="fade-up" data-aos-duration="1000">
+                    <NavLink to='/Services'><button className='explore'>Show More</button></NavLink>
                 </div>
             </div>
         </div>
